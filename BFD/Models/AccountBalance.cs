@@ -11,6 +11,6 @@ namespace BFD.Models
         public string AccountType { get; set; }
         public string BankName { get; set; }
         public decimal Balance { get; set; }
-
+        public string Month { get; set; }
     }
 }

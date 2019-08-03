@@ -25,11 +25,19 @@ namespace BFD
             services.AddMvc();
             services.AddHttpClient();
 
+            services.AddCors(options =>
+            {
+                options.AddPolicy("EnableCORS", builder =>
+                {
+                    builder.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod().AllowCredentials().Build();
+                });
+            });
+
             services.AddTransient<AccountDetailProxy, AccountDetailProxy>();
             services.AddTransient<AccountDetailService, AccountDetailService>();
             services.AddTransient<CashFlowProxy, CashFlowProxy>();
             services.AddTransient<CashFlowService, CashFlowService>();
-
+       
             services.AddOptions()
                 .Configure<AccountSummaryApiConfiguration>(Configuration.GetSection("OpenBankingAccountSummaryApi"));
 
@@ -42,12 +50,8 @@ namespace BFD
             {
                 app.UseDeveloperExceptionPage();
             }
-            else
-            {
-                app.UseHsts();
-            }
 
-            app.UseHttpsRedirection();
+            app.UseCors("EnableCORS");
             app.UseGraphiQl("/graphql");
             app.UseMvc();
         }

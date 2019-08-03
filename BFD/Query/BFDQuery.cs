@@ -22,7 +22,7 @@ namespace BFD.Query
                 "AccountBalance",
                 resolve: context =>
                 {
-                    return accountDetailProxy.GetAccountSummary();
+                    return accountDetailProxy.GetAccountBalances();
                 });
         }
     }
