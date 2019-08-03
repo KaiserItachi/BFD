@@ -1,0 +1,14 @@
+C:\Users\mohanmuralidharan.b\source\repos\BFD\BFD\bin\Debug\netcoreapp2.1\BFD.deps.json
+C:\Users\mohanmuralidharan.b\source\repos\BFD\BFD\bin\Debug\netcoreapp2.1\BFD.runtimeconfig.json
+C:\Users\mohanmuralidharan.b\source\repos\BFD\BFD\bin\Debug\netcoreapp2.1\BFD.runtimeconfig.dev.json
+C:\Users\mohanmuralidharan.b\source\repos\BFD\BFD\bin\Debug\netcoreapp2.1\BFD.dll
+C:\Users\mohanmuralidharan.b\source\repos\BFD\BFD\obj\Debug\netcoreapp2.1\BFD.csprojAssemblyReference.cache
+C:\Users\mohanmuralidharan.b\source\repos\BFD\BFD\obj\Debug\netcoreapp2.1\BFD.csproj.CoreCompileInputs.cache
+C:\Users\mohanmuralidharan.b\source\repos\BFD\BFD\obj\Debug\netcoreapp2.1\BFD.RazorAssemblyInfo.cache
+C:\Users\mohanmuralidharan.b\source\repos\BFD\BFD\obj\Debug\netcoreapp2.1\BFD.RazorAssemblyInfo.cs
+C:\Users\mohanmuralidharan.b\source\repos\BFD\BFD\obj\Debug\netcoreapp2.1\BFD.AssemblyInfoInputs.cache
+C:\Users\mohanmuralidharan.b\source\repos\BFD\BFD\obj\Debug\netcoreapp2.1\BFD.AssemblyInfo.cs
+C:\Users\mohanmuralidharan.b\source\repos\BFD\BFD\obj\Debug\netcoreapp2.1\BFD.RazorTargetAssemblyInfo.cache
+C:\Users\mohanmuralidharan.b\source\repos\BFD\BFD\bin\Debug\netcoreapp2.1\BFD.pdb
+C:\Users\mohanmuralidharan.b\source\repos\BFD\BFD\obj\Debug\netcoreapp2.1\BFD.dll
+C:\Users\mohanmuralidharan.b\source\repos\BFD\BFD\obj\Debug\netcoreapp2.1\BFD.pdb
