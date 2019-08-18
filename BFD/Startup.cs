@@ -1,7 +1,4 @@
 ﻿using BFD.Proxy;
-using BFD.Query;
-using BFD.Services;
-using BFD.Types;
 using GraphiQl;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -34,9 +31,7 @@ namespace BFD
             });
 
             services.AddTransient<AccountDetailProxy, AccountDetailProxy>();
-            services.AddTransient<AccountDetailService, AccountDetailService>();
             services.AddTransient<CashFlowProxy, CashFlowProxy>();
-            services.AddTransient<CashFlowService, CashFlowService>();
        
             services.AddOptions()
                 .Configure<AccountSummaryApiConfiguration>(Configuration.GetSection("OpenBankingAccountSummaryApi"));

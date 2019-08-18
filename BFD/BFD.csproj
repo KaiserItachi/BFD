@@ -13,9 +13,20 @@
     <PackageReference Include="GraphQL" Version="2.4.0" />
     <PackageReference Include="GraphQL.Server.Transports.AspNetCore" Version="3.4.0" />
     <PackageReference Include="GraphQL.Server.Transports.WebSockets" Version="3.4.0" />
-    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.App" Version="$(AspNetCoreAppRuntimeFrameworkVersion)">
+      <IsImplicitlyDefined>true</IsImplicitlyDefined>
+      <PrivateAssets>All</PrivateAssets>
+      <Publish>true</Publish>
+    </PackageReference>
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.2" PrivateAssets="All" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.9" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Compile Remove="Models\DBSAccountSummary.cs" />
+    <Compile Remove="Services\AccountDetailService.cs" />
+    <Compile Remove="Services\CashFlowService.cs" />
+    <Compile Remove="Controllers\BusinessFinanceDashboardController.cs" />
+    <Compile Remove="Controllers\ValuesController.cs" />
+  </ItemGroup>
 </Project>
