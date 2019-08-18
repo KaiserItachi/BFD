@@ -32,6 +32,7 @@ namespace BFD
 
             services.AddTransient<AccountDetailProxy, AccountDetailProxy>();
             services.AddTransient<CashFlowProxy, CashFlowProxy>();
+            services.AddTransient<CustomerProxy, CustomerProxy>();
        
             services.AddOptions()
                 .Configure<AccountSummaryApiConfiguration>(Configuration.GetSection("OpenBankingAccountSummaryApi"));

@@ -9,6 +9,7 @@ namespace BFD.Types
         {
             Name = "CashFlow";
 
+            Field(x => x.CustomerId).Description("Customer Id");
             Field(x => x.Month).Description("Month");
             Field(x => x.Payable).Description("Payable");
             Field(x => x.Year).Description("Year");

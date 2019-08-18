@@ -15,11 +15,13 @@ namespace BFD.Controllers
     {
         private readonly AccountDetailProxy _accountDetailsProxy;
         private readonly CashFlowProxy _cashFlowProxy;
+        private readonly CustomerProxy _customerProxy;
         
-        public GraphQLController(AccountDetailProxy accountDetailProxy, CashFlowProxy cashFlowProxy)
+        public GraphQLController(AccountDetailProxy accountDetailProxy, CashFlowProxy cashFlowProxy, CustomerProxy customerProxy)
         {
             _accountDetailsProxy = accountDetailProxy;
             _cashFlowProxy = cashFlowProxy;
+            _customerProxy = customerProxy;
         }
 
         public async Task<IActionResult> Post ([FromBody] GraphQLQuery query)
@@ -28,7 +30,7 @@ namespace BFD.Controllers
 
             var schema = new Schema
             {
-                Query = new BFDQuery(_accountDetailsProxy, _cashFlowProxy)
+                Query = new BFDQuery(_accountDetailsProxy, _cashFlowProxy, _customerProxy)
             };
 
             var result = await new DocumentExecuter().ExecuteAsync(_ =>

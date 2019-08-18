@@ -6,7 +6,7 @@ namespace BFD.Query
 {
     public class BFDQuery : ObjectGraphType
     {
-        public BFDQuery(AccountDetailProxy accountDetailProxy, CashFlowProxy cashFlowProxy)
+        public BFDQuery(AccountDetailProxy accountDetailProxy, CashFlowProxy cashFlowProxy, CustomerProxy customerProxy)
         {
             Name = "Query";
             Description = ".....";
@@ -24,6 +24,21 @@ namespace BFD.Query
                 {
                     return accountDetailProxy.GetAccountBalances();
                 });
+
+            Field<ListGraphType<CustomerType>>(
+                "Customer",
+                resolve: context =>
+                {
+                    return customerProxy.GetCustomerList();
+                });
+
+            Field<CustomerType>(
+                "GetCustomerByCustomerId",
+                arguments: new QueryArguments(
+                        new QueryArgument<NonNullGraphType<IntGraphType>> { Name = "CustomerId" }
+                    ),
+                resolve: context => customerProxy.GetCustomerById(context.GetArgument<int>("CustomerId"))
+                );
         }
     }
 }
