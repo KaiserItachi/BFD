@@ -26,7 +26,7 @@ namespace BFD.Controllers
 
         public async Task<IActionResult> Post ([FromBody] GraphQLQuery query)
         {
-            var inputs = query.Variables.ToInputs();
+            var inputs = query.Variables?.ToInputs();
 
             var schema = new Schema
             {

@@ -26,3 +26,17 @@ C:/Users/mohanmuralidharan.b/source/repos/BFD/BFD/obj/Debug/netcoreapp2.1/BFD.pd
 /Users/kaiser/Desktop/BFD/BFD/bin/Debug/netcoreapp2.1/BFD.dll
 /Users/kaiser/Desktop/BFD/BFD/bin/Debug/netcoreapp2.1/BFD.pdb
 /Users/kaiser/Desktop/BFD/BFD/obj/Debug/netcoreapp2.1/BFD.RazorTargetAssemblyInfo.cache
+/home/kaiser/Desktop/BFD/BFD/obj/Debug/netcoreapp2.1/BFD.dll
+/home/kaiser/Desktop/BFD/BFD/obj/Debug/netcoreapp2.1/BFD.pdb
+/home/kaiser/Desktop/BFD/BFD/bin/Debug/netcoreapp2.1/BFD.deps.json
+/home/kaiser/Desktop/BFD/BFD/bin/Debug/netcoreapp2.1/BFD.runtimeconfig.json
+/home/kaiser/Desktop/BFD/BFD/bin/Debug/netcoreapp2.1/BFD.runtimeconfig.dev.json
+/home/kaiser/Desktop/BFD/BFD/bin/Debug/netcoreapp2.1/BFD.dll
+/home/kaiser/Desktop/BFD/BFD/bin/Debug/netcoreapp2.1/BFD.pdb
+/home/kaiser/Desktop/BFD/BFD/obj/Debug/netcoreapp2.1/BFD.csprojAssemblyReference.cache
+/home/kaiser/Desktop/BFD/BFD/obj/Debug/netcoreapp2.1/BFD.csproj.CoreCompileInputs.cache
+/home/kaiser/Desktop/BFD/BFD/obj/Debug/netcoreapp2.1/BFD.RazorAssemblyInfo.cache
+/home/kaiser/Desktop/BFD/BFD/obj/Debug/netcoreapp2.1/BFD.RazorAssemblyInfo.cs
+/home/kaiser/Desktop/BFD/BFD/obj/Debug/netcoreapp2.1/BFD.AssemblyInfoInputs.cache
+/home/kaiser/Desktop/BFD/BFD/obj/Debug/netcoreapp2.1/BFD.AssemblyInfo.cs
+/home/kaiser/Desktop/BFD/BFD/obj/Debug/netcoreapp2.1/BFD.RazorTargetAssemblyInfo.cache

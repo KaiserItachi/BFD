@@ -1,4 +1,5 @@
-﻿using BFD.Proxy;
+﻿using System;
+using BFD.Proxy;
 using BFD.Types;
 using GraphQL.Types;
 
@@ -13,32 +14,26 @@ namespace BFD.Query
 
             Field<ListGraphType<CashFlowType>>(
                 "CashFlow",
-                resolve: context =>
-                {
-                    return cashFlowProxy.GetCashFlowDetails();
-                });
+                resolve: context => cashFlowProxy.GetCashFlowDetails());
 
             Field<ListGraphType<AccountBalanceType>>(
                 "AccountBalance",
-                resolve: context =>
-                {
-                    return accountDetailProxy.GetAccountBalances();
-                });
+                resolve: context => accountDetailProxy.GetAccountBalances());
 
             Field<ListGraphType<CustomerType>>(
                 "Customer",
-                resolve: context =>
-                {
-                    return customerProxy.GetCustomerList();
-                });
+                resolve: context => customerProxy.GetCustomerList());
 
             Field<CustomerType>(
                 "GetCustomerByCustomerId",
                 arguments: new QueryArguments(
-                        new QueryArgument<NonNullGraphType<IntGraphType>> { Name = "CustomerId" }
+                        new QueryArgument<NonNullGraphType<IntGraphType>> { Name = "customerId" }
                     ),
-                resolve: context => customerProxy.GetCustomerById(context.GetArgument<int>("CustomerId"))
-                );
+                resolve: context =>
+                {
+                    var customerId = context.GetArgument<int>("customerId");
+                    return customerProxy.GetCustomerById(customerId);
+                });
         }
     }
 }

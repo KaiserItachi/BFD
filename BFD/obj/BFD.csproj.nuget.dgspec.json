@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "/Users/kaiser/Desktop/BFD/BFD/BFD.csproj": {}
+    "/home/kaiser/Desktop/BFD/BFD/BFD.csproj": {}
   },
   "projects": {
-    "/Users/kaiser/Desktop/BFD/BFD/BFD.csproj": {
+    "/home/kaiser/Desktop/BFD/BFD/BFD.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/kaiser/Desktop/BFD/BFD/BFD.csproj",
+        "projectUniqueName": "/home/kaiser/Desktop/BFD/BFD/BFD.csproj",
         "projectName": "BFD",
-        "projectPath": "/Users/kaiser/Desktop/BFD/BFD/BFD.csproj",
-        "packagesPath": "/Users/kaiser/.nuget/packages/",
-        "outputPath": "/Users/kaiser/Desktop/BFD/BFD/obj/",
+        "projectPath": "/home/kaiser/Desktop/BFD/BFD/BFD.csproj",
+        "packagesPath": "/home/kaiser/.nuget/packages/",
+        "outputPath": "/home/kaiser/Desktop/BFD/BFD/obj/",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+          "/usr/share/dotnet/sdk/NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "/Users/kaiser/.nuget/NuGet/NuGet.Config"
+          "/home/kaiser/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp2.1"
@@ -67,6 +67,7 @@
               "version": "[2.1.2, )"
             },
             "Microsoft.NETCore.App": {
+              "suppressParent": "All",
               "target": "Package",
               "version": "[2.1.0, )",
               "autoReferenced": true
